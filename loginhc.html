@@ -1,0 +1,101 @@
+
+
+
+<html> 
+<head>
+<title>loginpage</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+<script type="text/javascript">
+function msg() {
+    var username = document.getElementById("user").value;
+    var password = document.getElementById("pass").value;
+
+        if (username == "") {
+        alert("please enter mail to login..");
+    } else if(password =="")
+{
+alert("please enter password....");
+}
+else{
+
+        
+    alert("successfully  LOGIN..!!");
+
+}
+
+function msg1()
+{
+alert("FAILED TO LOGIN");
+}
+function msg2()
+{
+alert("EX:abc@gamil.com");
+}
+
+</script>
+</head>
+<section>
+<body  style="background-image:url('bg21.jpg'); 
+background-repeat: no-repeat;
+ background-attachment:fixed; 
+ background-size:cover;">
+<br>
+<br><br>
+<br>
+
+<!--<center><h1 > <font color="black" size="8"><b>HEALTH HUB NAVIAGTOR</b></font></h1>-->
+<center>
+<form style="background-image:url('bg11.jpeg'); 
+background-repeat: no-repeat;
+ background-attachment:fixed; 
+ background-size:cover; box-sizing:border-box;display:inline-block;border:2px solid rgba(0,0,0,0.3);width:40%">
+
+<center><h2 style="box-sizing:border-box;display:inline-block;height:5%;"width="20%"><font color="black" size="5%">ADMIN LOGIN </font><font color="black"><i class="fa-solid fa-user-tie"></i></font></h2></center>
+
+
+<center><label><font color="blue"><i class="fa-regular fa-circle-user"></i>  <b>ADMIN ID </font></label>
+<input type="text"  id="user" name="user" onclick="msg2()" value="" placeholder="email or phone" required 
+style="width:40%;background:transparent; margin:8px 0px; padding:10px 20px; display:inline-block; border:2px solid rgba(0,0,0,0.3); box-sizing:border-box;">
+<br><br></center>
+
+
+<center><label align="left"><font color=" blue"><i class="fa-solid fa-key"></i> PASSWORD</b></font>
+</label>
+<input type="password" name="pass" id="pass"  placeholder="enter password" required 
+style="width:40%;background:transparent; margin:8px 0px; padding:10px 20px; display:inline-block; border:2px solid rgba(0,0,0,0.3); box-sizing:border-box;"><br><br>
+</center>
+
+<center> <a href="admin.html"> <input type="submit"  onclick="msg()" value="LOGIN" 
+style="background:transparent; width:20%; color:black; padding:15px; margin:10px 0px; border:2px solid rgba(0,0,0,0.3); cursor:pointer;border-radius:30px;"> </a><br></center>
+
+<!--
+<center><input type="checkbox" ><font color="#00FFFF">Remember me</font><br></center>
+
+
+<center> <a href="login1.html"> <input type="button" name="cancel" onclick="msg1()" value="cancel" 
+style="background-color:#00FFFF; width:5%; color:black; padding:5px; margin:5px 0px; border:solid 4px #7DF9FF; cursor:pointer;border-radius:30px;"> </a> <br></center>
+
+<center><p><font color="#00FFFF"> continue as a </font><a href="guest.html"> <input type="button" name="guest" value="GUEST" 
+style="background-color:#00FFFF; width:5%; color:black; padding:5px; margin:5px 0px; border:solid 4px #7DF9FF; cursor:pointer;border-radius:30px;"></a></p> </center>
+
+
+ 
+<center><p><font color="#00FFFF">Don't have an account?</font><a href="reg1.html" ><font color="red">Create an account</font><a></p><br><br></center>
+-->
+</form>
+</center>
+</section>
+</body>
+</html>
+
+
+
+

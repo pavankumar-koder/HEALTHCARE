@@ -1,0 +1,81 @@
+<html lang="en","te">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register Page</title>
+    <script type="text/javascript">
+        function msg() {
+            var firstname= document.getElementById("name").value;
+            var lastname= document.getElementById("name").value;
+            var phoneNumber= document.getElementById("pass").value;
+            var username = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+            if (firstname==""){
+                alert("please enter first name..!!");
+            } else if (lastname==""){
+                alert("please enter last name..!!");
+            } else if(phoneNumber==""){
+                alert("please enter phone number ..!!");
+            }
+            if (username == "") {
+                alert("please enter mail to login..!!");
+            } else if(password =="") {
+                alert("please enter password....");
+            } else {
+                alert("register SUCCESSFUL!!!!!");
+            }
+        }
+
+        function msg1() {
+            alert("FAILED TO register");
+        }
+
+        function msg2() {
+            alert("EX:abc@gamil.com");
+        }
+    </script>
+</head>
+<body style="background-image:url('bg5.jpeg'); background-repeat: no-repeat; background-attachment:fixed; background-size:cover;">
+    <center>
+        <!-- Form action is set to 'registration.php' which handles the form data -->
+        <form method="POST" action="registration.php" style="background-image:url('bg2.jpeg'); background-repeat: no-repeat; background-attachment:fixed; background-size:cover;width:70%; margin:8px 0px; padding:12px 20px; display:inline-block; border:2px solid #00FFFF; box-sizing:border-box;">
+            <h1><font color="#00FFFF">REGISTER FORM <i class="fa-regular fa-address-card"></i></font></h1>
+            <br><br>
+
+            <!-- First Name Input -->
+            <label><font color="#00FFFF"><i class="fa-solid fa-user"></i> FIRST NAME :</font></label>
+            <input type="text" id="name" name="firstname" onclick="msg2()" value="" placeholder="First name" required style="width:40%; margin:8px 0px; padding:12px 20px; display:inline-block; border:2px solid #00FFFF; box-sizing:border-box;">
+            <br><br>
+
+            <!-- Last Name Input -->
+            <label><font color="#00FFFF"><i class="fa-solid fa-user"></i> LAST NAME :</font></label>
+            <input type="text" id="name" name="lastname" onclick="msg2()" value="" placeholder="Last name" required style="width:40%; margin:8px 0px; padding:12px 20px; display:inline-block; border:2px solid #00FFFF; box-sizing:border-box;">
+            <br><br>
+
+            <!-- Username Input -->
+            <label><font color="#00FFFF"><i class="fa-regular fa-circle-user"></i> USERNAME (Email or Phone) :</font></label>
+            <input type="text" id="user" name="username" onclick="msg2()" value="" placeholder="Email or phone" required style="width:40%; margin:8px 0px; padding:12px 20px; display:inline-block; border:2px solid #00FFFF; box-sizing:border-box;">
+            <br><br>
+
+            <!-- Password Input -->
+            <label><font color="#00FFFF"><i class="fa-solid fa-key"></i> PASSWORD :</font></label>
+            <input type="password" name="password" id="pass" placeholder="Enter password" required style="width:40%; margin:8px 0px; padding:12px 20px; display:inline-block; border:2px solid #00FFFF; box-sizing:border-box;">
+            <br><br>
+
+            <!-- Register Button -->
+            <input type="submit" name="register" value="REGISTER" onclick="msg()" style="background-color:#00FFFF; width:20%; color:black; padding:15px; margin:10px 0px; cursor:pointer;border:solid 4px #7DF9FF;border-radius:30px;">
+            <br><br>
+
+            <!-- Cancel Button -->
+            <a href="reg1.html">
+                <input type="button" name="click" onclick="msg1()" value="Cancel" style="background-color:#00FFFF; width:8%; color:black; padding:5px; margin:5px 0px; cursor:pointer;border:solid 4px #7DF9FF;border-radius:30px;">
+            </a>
+            <br><br>
+
+            <!-- Login Link -->
+            <p><font color="#00FFFF">If you have an account? <a href="login1.html"><font color="red">Log in</font></a></font></p>
+        </form>
+    </center>
+</body>
+</html>

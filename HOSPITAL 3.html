@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HEALTH CARE</title>
+    <style>
+        /* Original Styles (Unchanged) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #005a87;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .content-left {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+            margin-right: 20px;
+        }
+
+        .content-right {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .news-events ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .news-events li {
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .toggle-contrast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #005a87;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .high-contrast {
+            background-color: black;
+            color: white;
+        }
+
+        .appointment-form input,
+        .appointment-form select,
+        .appointment-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .appointment-form {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .testimonials,
+        .careers {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Chatbot Styles */
+        .chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #005a87;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .chatbox {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+        }
+
+        .chatbox-header {
+            background-color: #005a87;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .chatbox-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            max-height: 300px;
+        }
+
+        .chatbox-input {
+            display: flex;
+            padding: 10px;
+        }
+
+        .chatbox-input input {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .chatbox-input button {
+            padding: 5px;
+            background-color: #005a87;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>HEALTH CARE Hospital</h1>
+        <p>Your health is our priority</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="patientportal.html">Patient Portal</a>
+       
+        <a href="registration.html">Registration</a>
+        <a href="loginhc.html">Login</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Accessibility Button -->
+    <button class="toggle-contrast" onclick="toggleContrast()">Toggle High Contrast</button>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="content-left">
+            <h2>Welcome to health care Hospital</h2>
+            <p>We are committed to providing the best healthcare services. Browse our site for more information about our services, doctors, and facilities.</p>
+
+            <h3>News & Events</h3>
+            <div class="news-events">
+                <ul>
+                    <li><strong>Free Health Checkup Camp</strong> - Join us on 10th December for a free health checkup camp.</li>
+                    <li><strong>New Cardiologist Available</strong> - We are pleased to welcome Dr. John Doe to our cardiology department.</li>
+                    <li><strong>Medical Research Symposium</strong> - Join us for the upcoming symposium on the latest medical breakthroughs.</li>
+                </ul>
+            </div>
+
+            <h3>Emergency Services</h3>
+            <p>If you need urgent medical assistance, please contact our 24/7 emergency services at: <strong>+123 456 7890</strong></p>
+
+            <!-- Online Appointment Form -->
+            <h3>Schedule an Appointment</h3>
+            <form class="appointment-form" id="appointment-form">
+                <input type="text" id="patient-name" placeholder="Full Name" required>
+                <input type="email" id="patient-email" placeholder="Email" required>
+                <select id="doctor" required>
+                    <option value="" disabled selected>Select Doctor</option>
+                    <option value="cardiologist">Dr. John Doe (Cardiologist)</option>
+                    <option value="neurologist">Dr. Jane Smith (Neurologist)</option>
+                </select>
+                <input type="date" id="appointment-date" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+
+            <!-- Health Library Section -->
+            <h3>Health Library</h3>
+            <p>Explore our health library to learn more about various medical conditions and treatments.</p>
+
+            <!-- Patient Testimonials -->
+            <div class="testimonials">
+                <h3>Patient Testimonials</h3>
+                <p>"The care and attention I received at XYZ Hospital was exceptional! Highly recommend it." - Sarah T.</p>
+                <p>"The doctors were very helpful and understanding. A great experience overall." - Mark H.</p>
+            </div>
+        </div>
+
+        <!-- Right Sidebar Section -->
+        <div class="content-right">
+            <h3>Patient Portal</h3>
+            <p><a href="#">Login to your Patient Portal</a></p>
+
+            <h3>Insurance & Billing</h3>
+            <p>We accept most major insurance plans. For billing inquiries, please <a href="#">contact us</a>.</p>
+
+            <h3>Careers</h3>
+            <p>Interested in joining our team? Check out our latest job openings in our <a href="#">Careers page</a>.</p>
+
+            <!-- Online Payment -->
+            <h3>Make a Payment</h3>
+            <p>You can pay your bills securely online through our payment portal. <a href="#">Click here</a> to make a payment.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 health care Hospital | All rights reserved.</p>
+    </div>
+
+    <!-- Chatbot Button + Box -->
+    <div class="chat-icon" onclick="toggleChat()">💬</div>
+
+    <div class="chatbox" id="chatbox">
+        <div class="chatbox-header">HealthCare Assistant</div>
+        <div class="chatbox-messages" id="chatbox-messages"></div>
+        <div class="chatbox-input">
+            <input type="text" id="chat-input" placeholder="Ask me anything...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Script -->
+    <script>
+        function toggleChat() {
+            let chatbox = document.getElementById("chatbox");
+            chatbox.style.display = chatbox.style.display === "none" ? "flex" : "none";
+        }
+
+        async function sendMessage() {
+            let input = document.getElementById("chat-input");
+            let message = input.value.trim();
+            if (message === "") return;
+
+            let chatboxMessages = document.getElementById("chatbox-messages");
+
+            let userMessage = document.createElement("p");
+            userMessage.style.color = "blue";
+            userMessage.innerHTML = "You: " + message;
+            chatboxMessages.appendChild(userMessage);
+
+            let botResponse = await getBotResponse(message);
+
+            let botMessage = document.createElement("p");
+            botMessage.style.color = "green";
+            botMessage.innerHTML = "Bot: " + botResponse;
+            chatboxMessages.appendChild(botMessage);
+
+            chatboxMessages.scrollTop = chatboxMessages.scrollHeight;
+            input.value = "";
+        }
+
+        async function getBotResponse(userMessage) {
+            const apiKey = " "; // Replace this with your API key
+            const endpoint = "https://api.openai.com/v1/chat/completions";
+
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    model: "gpt-4",
+                    messages: [{ role: "user", content: userMessage }]
+                })
+            });
+
+            const data = await response.json();
+            return data.choices?.[0]?.message?.content || "Sorry, I couldn't understand your request.";
+        }
+
+        function toggleContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+    </script>
+</body>
+</html>

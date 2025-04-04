@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Health Library - XYZ Hospital</title>
+    <style>
+        /* Basic CSS for layout and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .library-container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .library-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .library-header h1 {
+            color: #005a87;
+            font-size: 2.5em;
+        }
+
+        .library-header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .article-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .article-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .article-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-item h3 {
+            color: #005a87;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .article-item p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .article-item button {
+            background-color: #005a87;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+    

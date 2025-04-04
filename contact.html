@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - XYZ Hospital</title>
+    <style>
+        /* Basic CSS for layout and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .contact-container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h1 {
+            color: #005a87;
+            font-size: 2.5em;
+        }
+
+        .contact-header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .contact-info div {
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            color: #005a87;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .contact-form h2 {
+            font-size: 2em;
+            color: #005a87;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #005a87;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .contact-form button:hover {
+            background-color: #003f6b;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contact Page Content -->
+    <div class="contact-container">
+        <!-- Page Header -->
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please use the contact form below or find our contact details.</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div>
+                <h3>Address</h3>
+                <p>XYZ Hospital<br>
+                123 Health Street<br>
+                Cityville, Country 12345</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>+1 234 567 890<br>+1 234 567 891</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>info@xyzhospital.com<br>support@xyzhospital.com</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Enter the subject of your message">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+                </div>
+
+                <button type="submit">Submit Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 XYZ Hospital | All rights reserved.</p>
+    </div>
+
+</body>
+</html>
